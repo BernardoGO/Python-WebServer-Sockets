@@ -1,0 +1,33 @@
+<html>
+<body>
+fdsfsfds
+<%
+try:
+    include("index.html")
+
+
+    print len(_POST_)
+
+
+    for x in _POST_:
+        print _POST_[x]
+except Exception as e:
+    print e
+
+
+%>
+
+<form action="#" method="POST" enctype="multipart/form-data">
+First name:<br>
+<input type="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+<input type="file" name="userfile"><br>
+<input type="submit" value="Submit">
+</form>
+
+
+</html>
+</body>
